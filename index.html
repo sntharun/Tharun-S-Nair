@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#121212">
-<meta name="description" content="Tharun S Nair - Final year CS (AI & ML) student at SVIT Bengaluru. Builder of full-stack and AI/ML projects, President of LangNet.">
+<meta name="description" content="Tharun S Nair - Final year CS (AI &amp; ML) student at SVIT Bengaluru. Builder of full-stack and AI/ML projects, President of LangNet.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
 <link rel="icon" href="favicon.ico">
+<link rel="preload" as="image" href="Photo.jpg">
 <link rel="stylesheet" href="style.css">
 <title>About Me | Tharun S Nair</title>
 </head>
@@ -18,7 +19,7 @@
 <div class="bg-mesh" aria-hidden="true"></div>
 <header class="site-header">
   <nav class="navbar glass" aria-label="Primary">
-    <a class="brand" href="#top">TSN</a>
+    <a class="brand" href="#top" aria-label="Back to top">TSN</a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -32,7 +33,7 @@
 <section class="hero" id="top">
   <div class="glass hero-panel">
     <div class="avatar-wrap">
-      <img src="Photo.jpeg" alt="Photo of Tharun S Nair" class="avatar" width="116" height="116" decoding="async" fetchpriority="high">
+      <img src="Photo.jpg" alt="Photo of Tharun S Nair" class="avatar" width="116" height="116" decoding="async" fetchpriority="high">
     </div>
     <div class="hero-text">
       <p class="prompt-line"><span class="prompt-symbol">$</span>whoami</p>
@@ -43,16 +44,16 @@
 </section>
 
 <main class="content-grid">
-  <section class="card terminal-card about-card section-card" id="about" aria-labelledby="about-title">
-    <div class="terminal-bar" aria-hidden="true">
-      <span class="dot dot-1"></span>
-      <span class="dot dot-2"></span>
-      <span class="dot dot-3"></span>
-      <span class="terminal-title" id="about-title">about.md</span>
-    </div>
-    <div class="terminal-body">
-      <p class="terminal-command"><span class="prompt-symbol">$</span> cat about.md</p>
-      <p class="terminal-output">I write code that mostly works. I build full-stack and AI/ML projects, and I'm President of LangNet — my department's LLM and prompt engineering club.<span class="typing-cursor" aria-hidden="true"></span></p>
+  <section id="about" class="section">
+    <div class="glass terminal-card">
+      <div class="terminal-bar">
+        <span class="dot dot-1"></span><span class="dot dot-2"></span><span class="dot dot-3"></span>
+        <span class="terminal-title">about.md</span>
+      </div>
+      <div class="terminal-body">
+        <p><span class="prompt-symbol">$</span> cat about.md</p>
+        <p class="terminal-output">I write code that mostly works. I build full-stack and AI/ML projects, and I'm President of LangNet — my department's LLM and prompt engineering club.<span class="cursor" aria-hidden="true"></span></p>
+      </div>
     </div>
   </section>
 
@@ -137,11 +138,11 @@
       <input type="hidden" name="access_key" value="bbc92ef1-929e-4380-a16a-0dab38a763b7">
       <div class="field">
         <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
       </div>
       <div class="field">
         <label for="email">Mail ID</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
       </div>
       <div class="field">
         <label for="message">Message</label>
@@ -191,7 +192,7 @@
   </section>
 
   <footer class="page-footer">
-    <p class="footer-caption"><small>Still fixing typos, still shipping.</small></p>
+    <p class="footer-caption"><small>Debugged with Love (and mild frustration)</small></p>
     <p><small>&copy; Tharun S Nair | Aug 2026</small></p>
   </footer>
 </main>
