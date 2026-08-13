@@ -1,107 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>About Me | Tharun S Nair</title>
+<meta charset="UTF-8">
+<title>About Me | Tharun S Nair</title>
 </head>
+
 <body>
 
-    <header>
-        <h1>Tharun S Nair</h1>
-        <p>Final year B.E. Computer Science (AI &amp; ML) student, Sai Vidya Institute of Technology, Bengaluru</p>
+<header><h1>Tharun S Nair</h1></header>
+<p>Final year B.E. Computer Science (AI &amp; ML) student, SVIT Bengaluru</p>
 
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#leadership">Leadership</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<img src="Photo.jpeg" alt="DP" width="150">
 
-    <main>
+<nav>
+  <a href="#about">🏠 About</a>
+  <a href="#skills">💻 Skills</a>
+  <a href="#interests">✨ Interests</a>
+  <a href="#contact">📧 Contact</a>
+  <a href="https://github.com/sntharun">🔗 GitHub</a>
+</nav>
+<hr>
 
-        <section id="about">
-            <h2>All about me</h2>
-            <img src="Photo.jpeg" alt="DP" width="150">
-            <p>I write code that mostly works, and occasionally I even know why. Between that, I build full-stack and AI/ML projects and try to ship things that actually run. Currently President of LangNet - department's LLM and prompt engineering club, where I lead events, manage the club's website and RAG chatbot, and coordinate technical projects with the team.</p>
-        </section>
+<h2 id="about">About</h2>
+<p>I write code that mostly works. I build full-stack and AI/ML projects,
+and I'm President of LangNet — my department's LLM and prompt
+engineering club.</p>
 
-        <section id="projects">
-            <h2>Projects</h2>
+<h2>Project</h2>
+<h3>Sanchalana Samvega 2026</h3>
+<p>Registration platform for SVIT's state-level fest — 9,000+
+registrations, built with React, TypeScript, and Supabase, with Aadhaar
+verification.</p>
 
-            <article>
-                <h3>Sanchalana Samvega 2026</h3>
-                <p>Full-stack event platform built for SVIT's state-level college fest (April 2026), handling registration and event logistics for over 9,000 registrations. Built with React, TypeScript, and Supabase with Aadhar verification. Also handled registration data processing, event communications, and analytics reporting from the platform's data.</p>
-            </article>
+<h2>Leadership</h2>
+<p>President, <a href="https://langnet.vercel.app">LangNet</a> —
+technical events, prompt battles, expert talks.</p>
 
-            <article>
-                <h3>Tutor AI</h3>
-                <p>An NLP-based educational system that converts PDF lecture notes into meaningful multiple-choice and short-answer questions. Using semantic search, RAG, and large language models, the system creates questions grounded in the uploaded content. It helps students with self-assessment and personalized learning while reducing the time educators spend preparing quizzes and assessments.</p>
-            </article>
-        </section>
+<h2 id="skills">Skills</h2>
+<ul>
+  <li>Python, Java, JavaScript, SQL</li>
+  <li>LLMs, RAG, Prompt Engineering</li>
+  <li>AWS, Google Cloud, BigQuery</li>
+  <li>Git, GitHub</li>
+</ul>
 
-        <section id="leadership">
-            <h2>Leadership</h2>
-            <p>President, <a href="https://langnet.vercel.app">LangNet</a> - LLM and prompt engineering club of CSE (AI &amp; ML) department, SVIT. Organising technical events, prompt battles and expert talks.</p>
-        </section>
+<h2 id="interests">Interests</h2>
+<p>Bike rides, music, gym, tinkering with my desktop setup.</p>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming Languages: Python, Java, Javascript, SQL</li>
-                <li>AI/ML: LLMs, RAG, Prompt Engineering</li>
-                <li>Cloud: AWS Cloud Foundations, Google Cloud, BigQuery</li>
-                <li>Tools: Git, GitHub</li>
-            </ul>
-        </section>
+<h3 id="contact">Get in touch</h3>
+<form method="post">
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Mail ID</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  </div>
+  <button type="submit">Send</button>
+</form>
 
-        <section id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Certified Penetration Tester (CPT) | RedTeam Hacker Academy</li>
-                <li>Google Cloud Data Analytics | Google Skills</li>
-                <li>Cloud Computing and Distributed Systems | NPTEL</li>
-            </ul>
-        </section>
+<h3>Find me at</h3>
+<ul>
+  <li><a href="https://github.com/sntharun">GitHub</a></li>
+  <li><a href="https://www.linkedin.com/in/tharun-s-nair-039921292/">LinkedIn</a></li>
+</ul>
 
-        <section id="interests">
-            <h2>Interests</h2>
-            <p>Outside of code: riding my bike, listening to music, gym, and tinkering with my desktop setup more than is strictly necessary.</p>
-        </section>
-
-        <section id="contact">
-            <h3>Get in touch</h3>
-            <form method="post">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">Mail ID</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send</button>
-            </form>
-
-            <h3>Find me at</h3>
-            <ul>
-                <li><a href="https://github.com/sntharun">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/tharun-s-nair-039921292/">LinkedIn</a></li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer>
-        <p><small>&copy; Tharun S Nair | Aug 2026</small></p>
-    </footer>
+<footer>
+  <p><small>&copy; Tharun S Nair | Aug 2026</small></p>
+</footer>
 
 </body>
 </html>
