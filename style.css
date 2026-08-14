@@ -266,6 +266,15 @@ section{
     padding: 0;
 }
 
+.terminal-card::before,
+.terminal-card.section-card::before{
+    display: none;
+}
+
+.terminal-card .section-heading {
+    margin-bottom: 1rem;
+}
+
 .terminal-bar {
     display: flex;
     align-items: center;
@@ -312,6 +321,29 @@ section{
     font-size: 1.02rem;
 }
 
+.terminal-card .terminal-body,
+.terminal-card .terminal-body p,
+.terminal-card .terminal-body h2,
+.terminal-card .terminal-body h3,
+.terminal-card .terminal-body li,
+.terminal-card .terminal-body label,
+.terminal-card .terminal-body input,
+.terminal-card .terminal-body textarea,
+.terminal-card .terminal-body button,
+.terminal-card .terminal-body a,
+.terminal-card .terminal-body small,
+.terminal-card .terminal-body strong {
+    font-family: var(--font-mono);
+}
+
+.terminal-card .section-heading h2,
+.terminal-card .terminal-body h2,
+.terminal-card .terminal-body h3,
+.terminal-card .terminal-body .social-link__text strong,
+.terminal-card .terminal-body .social-link__text small {
+    font-family: var(--font-body);
+}
+
 .cursor {
     display: inline-block;
     width: 8px;
@@ -337,6 +369,20 @@ h1{
 
 h2{
     font-size: 1.4rem;
+}
+
+.terminal-card h2,
+.terminal-card h3,
+.terminal-card p,
+.terminal-card li,
+.terminal-card label,
+.terminal-card input,
+.terminal-card textarea,
+.terminal-card button,
+.terminal-card a,
+.terminal-card small,
+.terminal-card strong {
+    font-family: var(--font-mono);
 }
 
 .section-heading{
